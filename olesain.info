@@ -1,0 +1,12 @@
+name = Olesain
+description = A simple single column layout.
+package = theoleschool
+version = VERSION
+core = 7.x
+stylesheets[screen][] = css/reset.css
+stylesheets[screen][] = css/style.css
+
+scripts[] = js/bckgrd.js
+
+regions[content] = Content
+regions[footer] = Page bottom

@@ -1,0 +1,520 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html {
+}
+
+body {
+  font-family: Andale Mono, Courier, monospace;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+  font-size: 62.5%;
+  color: #003432;
+/*  background: url('../images/bg-71.png'), url('../images/bg-43.png'), url('../images/bg-13.png');
+  background-position: 100px 0, 50px 0, 0 0;*/
+}
+
+
+.clearing {
+  margin: 0;
+  padding: 0;
+  height: 0px;
+  clear: both;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.color-orng {
+  color: #dd9509;
+}
+
+p a,
+p a:link,
+p a:visited {
+  color: #234B4A;
+}
+
+p a:hover {
+  color: #dd1309;
+}
+
+.field-name-body ul {
+  list-style-type: square;
+  margin-left: 25px;
+  margin-bottom: 1em;
+}
+
+.field-name-body ul li {
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  color: #058681;
+}
+
+h1.logo {
+  font-size: 4.2em;
+  font-weight: lighter;
+  letter-spacing: -2px;
+  color: #1f5755;
+}
+
+h1 a{
+  text-decoration: none;
+  border: none;
+  color: #1f5755;
+}
+
+h2 {
+  font-size: 3em;
+  color: #1f5755;
+  font-weight: normal;
+  letter-spacing: -2px;
+  font-weight: bold;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #1f5755;
+}
+
+h2 a:hover,
+h1 a:hover {
+  color: #058681;
+}
+
+h3 {
+  font-size: 2em;
+  margin: 1em 0 .5em 0;
+}
+
+p {
+  margin-bottom: 1em;
+  font-size: 1.4em;
+  line-height: 1.5em;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+
+.field-name-body {
+  font-family: Verdana, Helvetica, Ariel, sans-serif;
+}
+
+#center-col {
+  width: 666px;
+  margin: 0 0 0 111px;
+  padding: 30px 0 0;
+}
+
+
+#main-wrap {
+  background: #fff;
+  margin: 0px 0 50px 0;
+}
+
+.content-wrap {
+  padding: 15px;
+}
+
+.column {
+  width: 290px;
+  float: left;
+}
+
+.column.first {
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.column.last {
+  margin-left: 10px;
+  padding-right: 10px;
+}
+
+.node {
+  padding: 0 0 15px;
+  border-bottom: 1px solid #ccc;
+  margin: 0 0 15px;
+}
+
+h2.node-title {
+  margin: 0 100px 0px 0;
+  padding: 0 0 3px;
+}
+
+.node .field-name-body {
+  padding: 5px 0 0 0;
+  margin: 5px 0 10px 0;
+  border-top: 1px dashed #ccc;
+}
+
+.node.last {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.meta {
+  font-size: 1em;
+  font-weight: bold;
+  float: right;
+  color: #dd9509;
+  text-align: right;
+  margin: 3px 0 0 7px;
+  width: 200px;
+}
+
+.tags,
+.tags a,
+.tags a:visited {
+  font-size: 1em;
+  font-weight: bold;
+  color: #234b4a;
+  text-align: right;
+  text-decoration: none;
+}
+
+.tags .field-item {
+  float: right;
+  padding-left: 1em;
+}
+
+.meta a,
+.meta a:visited {
+  text-decoration: none;
+  color: #dd9509;
+}
+
+.meta a:hover,
+.tags a:hover {
+  color: #dd1309;
+}
+
+/**
+ * Navigation / Meta-Header
+ */
+
+#meta-header {
+  position: fixed;
+  top: 22px;
+  left: 777px;
+  width: 212px;
+  padding-left: 10px;
+}
+
+h1.logo {
+  padding-bottom: 2px;
+  margin-bottom: 5px;
+  border-bottom: 1px dashed #ccc;
+}
+
+h1.logo .site-name {
+  font-size: .6em;
+}
+
+.logo .name {
+  display: block;
+  text-align: left;
+}
+
+#main-menu-nav a {
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #dd9509;
+  text-decoration: none;
+  margin-bottom: 3px;
+  display: block;
+}
+
+#main-menu-nav a.active {
+  color: #dd1309;
+  text-decoration: underline;
+}
+
+#main-menu-nav a:hover {
+  color: #dd1309;
+}
+
+/* Comments */
+#comments {
+  padding-top: 15px;
+}
+
+#comments h2 {
+  border-bottom: 1px dashed #ccc;
+  padding-top: 15px;
+}
+
+#comments h2.comment-form {
+  padding-top: 30px;
+  margin-bottom: 15px;
+}
+
+.comment {
+  margin: 0 0 0px 15px;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0 25px;
+}
+
+.comment .content {
+  padding-top: 10px;
+}
+
+.comment h3 {
+  font-size: 2em;
+  font-weight: lighter;
+}
+
+.comment h3 a {
+  text-decoration: none;
+  color: #1f5755;
+}
+
+/*contact page*/
+
+h2.webform-blurp {
+  border-bottom: 1px dashed #ccc;
+  padding-bottom: 3px;
+  margin-bottom: 10px;
+}
+
+.form-textarea-wrapper,
+input.form-text {
+  width: 100%;
+}
+
+/**
+ *  Standard Drupal stuff
+ *  simply copied and slightly modified from seven theme
+ */
+
+/**
+ * Fieldsets.
+ *
+ * Fieldset legends are displayed like containers in Seven. However, several
+ * browsers do not support styling of LEGEND elements. To achieve the desired
+ * styling:
+ * - All fieldsets use 'position: relative'.
+ * - All legend labels are wrapped in a single span.fieldset-legend that uses
+ *   'position: absolute', which means that the LEGEND element itself is not
+ *   rendered by browsers.
+ * - Due to using 'position: absolute', collapsed fieldsets do not have a
+ *   height; the fieldset requires a 'padding-top' to make the absolute
+ *   positioned .fieldset-legend appear as though it would have a height.
+ * - Various browsers are positioning the legend differently if there is a
+ *   'padding-left'/'padding-right' applied on a fieldset and inherit the
+ *   positioning even to absolute positioned elements within; we therefore have
+ *   to apply all padding to the inner .fieldset-wrapper instead.
+ */
+fieldset {
+  border: 1px solid #ccc;
+  padding: 2.5em 0 0 0;
+  position: relative;
+  margin: 1em 0;
+}
+fieldset .fieldset-legend {
+  margin-top: 0.5em;
+  padding-left: 15px;
+  position: absolute;
+  text-transform: uppercase;
+}
+fieldset .fieldset-wrapper {
+  padding: 0 13px 13px 15px;
+}
+fieldset.collapsed {
+  background-color: transparent;
+}
+html.js fieldset.collapsed {
+  border-width: 1px;
+  height: auto;
+}
+fieldset fieldset {
+  background-color: #fff;
+}
+fieldset fieldset fieldset {
+  background-color: #f8f8f8;
+}
+
+/**
+ * Form elements.
+ */
+.form-item {
+  padding: 9px 0;
+  margin: 0 0 10px;
+}
+.filter-wrapper .form-item,
+div.teaser-checkbox .form-item,
+.form-item .form-item {
+  padding: 5px 0;
+  margin: 0;
+  border: 0;
+}
+.form-type-checkbox {
+  padding: 0;
+}
+.text-format-wrapper .form-item {
+  padding-bottom: 0;
+}
+.form-item label {
+  margin: 0;
+  padding: 0;
+}
+.form-item label.option {
+  text-transform: none;
+}
+.form-item label.option {
+  font-size: 0.923em;
+}
+.form-item label.option input {
+  vertical-align: middle;
+}
+.form-disabled input.form-autocomplete,
+.form-disabled input.form-text,
+.form-disabled input.form-file,
+.form-disabled textarea.form-textarea,
+.form-disabled select.form-select {
+  background-color: #eee;
+  color: #777;
+}
+
+/* Filter */
+.filter-wrapper {
+  border-top: 0;
+  padding: 10px 2px;
+}
+.filter-wrapper .fieldset-wrapper {
+  padding: 0 6px;
+}
+.filter-wrapper .form-item,
+.filter-wrapper .filter-guidelines,
+.filter-wrapper .filter-help {
+  font-size: 0.923em;
+  padding: 2px 0 0 0;
+}
+ul.tips,
+div.description,
+.form-item div.description {
+  margin: 5px 0;
+  line-height: 1.3em;
+  font-size: 1.2em;
+  color: #666;
+}
+ul.tips li {
+  margin: 0.25em 0 0.25em 1.5em;
+}
+body div.form-type-radio div.description,
+body div.form-type-checkbox div.description {
+  margin-left: 1.5em;
+}
+input.form-submit,
+a.button {
+  cursor: pointer;
+  padding: 4px 17px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  color: #5a5a5a;
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.077em;
+  font-family: "Lucida Grande", Verdana, sans-serif;
+  border: 1px solid #e4e4e4;
+  border-bottom: 1px solid #b4b4b4;
+  border-left-color: #D2D2D2;
+  border-right-color: #D2D2D2;
+  background: url(images/buttons.png) 0 0 repeat-x;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+}
+a.button:link,
+a.button:visited,
+a.button:hover,
+a.button:active {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+div.node-form input#edit-submit,
+div.node-form input#edit-submit-1 {
+  border: 1px solid #8eB7cd;
+  border-left-color: #8eB7cd;
+  border-right-color: #8eB7cd;
+  border-bottom-color: #7691a2;
+  background: url(images/buttons.png) 0px -40px repeat-x;
+  color: #133B54;
+}
+input.form-submit:active {
+  background: #666;
+  color: #fff;
+  border-color: #555;
+  text-shadow: #222 0px -1px 0px;
+}
+input.form-button-disabled,
+input.form-button-disabled:active {
+  background: #eee none;
+  border-color: #eee;
+  text-shadow: none;
+  color: #999;
+}
+input.form-autocomplete,
+input.form-text,
+input.form-file,
+textarea.form-textarea,
+select.form-select {
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-top-color: #999;
+  background: #fff;
+  color: #333;
+}
+input.form-text:focus,
+input.form-file:focus,
+textarea.form-textarea:focus,
+select.form-select:focus {
+  color: #000;
+  border-color: #ace;
+}
+html.js input.form-autocomplete {
+  background-position: 100% 4px;
+}
+html.js input.throbbing {
+  background-position: 100% -16px;
+}
+ul.action-links {
+  margin: 1em 0;
+  padding: 0 20px 0 20px;
+  list-style-type: none;
+  overflow: hidden;
+}
+ul.action-links li {
+  float: left;
+  margin: 0 1em 0 0;
+}
+ul.action-links a {
+  padding-left: 15px;
+  background: transparent url(images/add.png) no-repeat 0 center;
+  line-height: 30px;
+}
+
+/*geshi filter*/
+div.geshifilter {
+  font-size: 1.7em;
+}
+
+span.geshifilter {
+  font-size: 1.3em;
+}
+
+/* Exceptions */
+#diff-inline-form select,
+div.filter-options select {
+  padding: 0;
+}
