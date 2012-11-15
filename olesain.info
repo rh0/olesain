@@ -3,8 +3,7 @@ description = A simple single column layout.
 package = theoleschool
 version = VERSION
 core = 7.x
-stylesheets[screen][] = css/reset.css
-stylesheets[screen][] = css/style.css
+stylesheets[screen][] = stylesheets/screen.css
 
 scripts[] = js/bckgrd.js
 

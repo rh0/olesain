@@ -1,0 +1,52 @@
+@import "compass/reset";
+@import "blueprint/grid";
+
+// Grid Vars/Func
+$columns: 12;
+$column-width: 65px;
+$gutter-width: 15px;
+$max-width: $columns * ($column-width + $gutter-width);
+
+// - extending the percentage function
+@function perc($width, $container-width: $max-width) {
+  @return percentage($width / $container-width);
+}
+
+// - colum mixin
+@mixin col($n, $padding: 0px, $border: 0px, $container-width: $max-width) {
+  float: left;
+  margin-right: percentage($gutter-width / $container-width);
+  width: percentage(($n * ($column-width + $gutter-width) - $gutter-width - ($padding * 2) - ($border * 2)) / $container-width);
+  border-width: $border;
+  padding: em($padding, $font-base) percentage($padding / $container-width);
+}
+
+// Font Vars/Func
+$font-base: 15px;
+$font-base-line-height: 24px;
+
+// - custom em func
+@function em($target, $context: $font-base) {
+  @if $target == 0 { @return 0 }
+  @return $target / $context + 0em;
+}
+
+// - custom line height func
+@function lh($amount: 1, $context: $font-base) {
+  @return em($font-base-line-height * $amount, $context);
+}
+
+#main-wrapper {
+  @include clearfix;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+#center-col {
+  @include clearfix;
+  @include col(8);
+}
+
+#meta-header {
+  @include col(4);
+}
